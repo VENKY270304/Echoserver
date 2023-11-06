@@ -21,6 +21,7 @@ Testing the server and client
 
 ## PROGRAM:
 ## Server Side:
+```
 import socket
 
 
@@ -39,8 +40,9 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
             if not data:
                 break
             conn.sendall(data)
-            
+```       
 ## Client Side:
+```
 import socket
 
 
@@ -55,7 +57,7 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
 
 
 print(f"Received {data!r}")
-
+```
 ## OUTPUT:
 ## Server Output:
 
